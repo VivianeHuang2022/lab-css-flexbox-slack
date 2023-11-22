@@ -8,3 +8,353 @@ paragraph yellow: #ECB12F
 links blue: #2E71A6
 footer links grey: #454245
 */
+
+body{
+    background-color: #540B51;
+    height: 100%; /* Ensures the full height of the webpage is utilized */
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+    width: 100%;
+}
+
+/* 容器样式 */
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #540B51; /* 设定的背景颜色 */
+    gap: 20px;
+}
+
+/* Slack logo样式 */
+.slack-logo {
+    height: 50px; /* 根据要求设置logo高度 */
+}
+
+/* 导航菜单样式 */
+.navigation {
+    list-style: none; /* 移除列表符号 */
+    display: flex; /* 默认为水平布局 */
+    gap: 20px; /* 列表项之间的间隔 */
+    margin: 10px; /* 移除默认外边距 */
+    padding: 50px; /* 移除默认内边距 */
+}
+
+.navigation li a {
+    color: white; /* 链接文字颜色 */
+    text-decoration: none; /* 移除下划线 */
+    gap: 50px;
+    text-decoration: dashed;
+    font-weight: bold; /* Makes the text bold */
+    font-style: italic; /* Makes the text italic */
+}
+
+/* 图标按钮样式 */
+.icon-buttons {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* 设置按钮之间的间隔 */
+}
+
+.icon-buttons img {
+    height: 50px; /* 设置图标高度与logo相同 */
+}
+
+/* 响应式设计: 针对移动设备的样式 */
+@media screen and (max-width: 320px) {
+    /* 移动设备上隐藏导航列表 */
+    .navigation {
+        display: none;
+    }
+    
+    /* 隐藏的附加列表同样保持隐藏，无需改变 */
+}
+
+/* 响应式设计: 针对桌面设备的样式 */
+@media screen and (min-width: 1024px) {
+    /* 桌面设备上显示导航列表 */
+    .navigation {
+        display: flex;
+    }
+    
+    /* 如果需要在桌面设备上显示隐藏的列表 */
+    .nav-container > ul {
+        display: flex; /* 或其他需要的显示类型 */
+    }
+}
+
+.slogan{
+    background-color: #540B51;
+    color: aliceblue;
+    font-size: 57px;
+    text-decoration: dashed;
+    text-align: center;
+}
+
+.firstPara{
+    text-align: center;
+    font-family: Arial, sans-serif; /* Example font family */
+    font-size: 16px; /* Example font size */
+}
+
+.yellowText{
+    color:yellow;
+    font-weight: bold; /* Makes the text bold */
+    font-style: italic; /* Makes the text italic */
+}
+
+.whiteText{
+    color:aliceblue;
+
+    font-weight: bold; /* Makes the text bold */
+    font-style: italic; /* Makes the text italic */
+}
+
+
+.SignUp{
+    display: flex;
+    flex-direction: column; /* Aligns child elements in a column */
+    align-items: center; /* Centers the child elements horizontally */
+    justify-content: center; /* Centers the child elements vertically, if needed */
+    /* Additional styling (e.g., padding, margin) can be added here */
+}
+
+
+
+ .SignUp-without-google, .SignUp-with-google {
+    text-align: center;
+    padding: 15px 30px; /* Increases the size of the button */
+    font-size: 16px; /* Adjust the font size as needed */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer; /* Changes cursor to pointer on hover */
+    margin: 10px 0; /* Space between buttons */
+    /* Add any additional styles here */
+    width: 90%;
+    font-weight: bold; /* Makes the text bold */
+    font-style: italic; /* Makes the text italic */
+}
+
+/* Ensure both buttons are the same width if using specific width/height */
+.SignUp-with-google {
+    display: inline-flex; /* Aligns the image and text in a row */
+    align-items: center; /* Centers the contents vertically */
+    justify-content: center; /* Centers the contents horizontally */
+    width: 90%;
+    background-color: #4285F4;
+}
+
+.google-image {
+    border: none;
+    display: inline-flex;
+    align-items: center; /* Centers the Google logo vertically */
+    border-radius: 3px;
+    background-color: white;
+    height: 20px; /* Adjust the height as needed */
+    margin-right: 10px; /* Adds space between the logo and the text */
+}
+
+.google-text {
+    color: aliceblue;
+    text-align: center;
+    /* Additional text styling can be added here */
+    font-weight: bold; /* Makes the text bold */
+    font-style: italic; /* Makes the text italic */
+}
+
+
+.screenshot{
+    width: 100%;
+}
+
+.iconSet{
+    background-color:#F3EAE2 ;
+    width: 100%;
+}
+
+.secondPara{
+    background-color:#F3EAE2 ;
+    text-align: center;
+    margin-top: 20px; /* 设置顶部边距 */
+    margin-bottom:20px;
+    font-size: 20px;
+    text-decoration: dashed;
+    font-weight: bold; /* Makes the text bold */
+    font-style: italic; /* Makes the text italic */
+
+}
+
+.iconImage{
+    display: flex;
+    flex-wrap: wrap; /* 允许子元素换行 */
+    gap: 10px;
+    align-items: center; /* Centers the child elements horizontally */
+    justify-content: center; /* Centers the child elements vertically, if needed */
+    /* Additional styling (e.g., padding, margin) can be added here */
+}
+
+.airbnb, .nasa, .uber, .target, .NewYork, .spotify{
+    height: 47px;
+    margin-top: 20px; /* 设置顶部边距 */
+    margin-bottom: 20px; /* 设置底部边距 */
+}
+
+@media (max-width: 320px) {
+    .iconImage {
+        flex-direction: column; /* 在较窄屏幕上垂直排列 */
+    }
+}
+
+@media(min-width:1024px){
+    .ironImage{
+        flex-direction: row;
+    }
+}
+
+
+.discount{
+    background-color:white ;
+    text-align: center;
+    margin-top: 10px; /* 设置顶部边距 */
+    margin-bottom:10px;
+}
+
+.thirdTitle{
+    color: #540B51;
+    font-size: 47px;
+    text-decoration: dashed;
+    font-weight: bold; /* Makes the text bold */
+    font-style: italic; /* Makes the text italic */
+}
+
+.thirdPara{
+    font-size: 20px;
+    text-decoration: dashed;
+    font-weight: bold; /* Makes the text bold */
+    font-style: italic; /* Makes the text italic */
+
+}
+
+
+.discount-1, discount-2, discount-3{
+    color: #540B51;
+    font-size: 47px;
+    text-decoration: dashed;
+    font-weight: bold; /* Makes the text bold */
+    font-style: italic; /* Makes the text italic */
+
+}
+.discount-2{
+    color: #540B51;
+    font-size: 47px;
+    text-decoration: dashed;
+    font-weight: bold; /* Makes the text bold */
+    font-style: italic; /* Makes the text italic */
+}
+
+.discount-3{
+    color: #540B51;
+    font-size: 47px;
+    text-decoration: dashed;
+    font-weight: bold; /* Makes the text bold */
+    font-style: italic; /* Makes the text italic */
+}
+.promotion-1, promotion-2, promotion-3{
+    color: black;
+    font-size: 20px;
+    text-decoration: dashed;
+    font-weight: bold; /* Makes the text bold */
+    font-style: italic; /* Makes the text italic */
+
+}
+
+.welcomePage{
+    background-color:#540B51;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column; /* Aligns child elements in a column */
+    justify-content: center; /* Centers the child elements vertically, if needed */
+}
+
+.forthTitle{
+    color: white;
+    font-size: 37px;
+    text-decoration: dashed;
+    font-weight: bold; /* Makes the text bold */
+    font-style: italic; /* Makes the text italic */
+    flex-direction: column;
+    flex-wrap: wrap;
+
+}
+
+
+
+
+.tryFree{
+    background-color:white;
+    color:#540B51;
+    font-size: 20px;
+    text-decoration: dashed;
+    font-weight: bold; /* Makes the text bold */
+    font-style: italic; /* Makes the text italic */
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center; /* Centers the child elements vertically, if needed */
+    /* Additional styling (e.g., padding, margin) can be added here */
+    display: inline-flex; /* Aligns the image and text in a row */
+    align-items: center; /* Centers the contents vertically */
+    width: 90%;
+
+}
+
+.talkSales{
+    background-color:#540B51;
+    color: white;
+    font-size: 20px;
+    text-decoration: dashed;
+    font-weight: bold; /* Makes the text bold */
+    font-style: italic; /* Makes the text italic */
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center; /* Centers the child elements vertically, if needed */
+    /* Additional styling (e.g., padding, margin) can be added here */
+    display: inline-flex; /* Aligns the image and text in a row */
+    align-items: center; /* Centers the contents vertically */
+    width: 90%;
+
+}
+
+.footer-end{
+    background-color: white;
+}
+.endFoot{
+    color:black;
+    font-size: 20px;
+    text-decoration: dashed;
+    font-weight: bold; /* Makes the text bold */
+    font-style: italic; /* Makes the text italic */
+    margin-left: 0cm;
+}
+
+.socialmedia-icon{
+    display: flex;
+    flex-direction: row;
+    gap: 200px;
+    justify-content: center; /* Centers the child elements vertically, if needed */
+    /* Additional styling (e.g., padding, margin) can be added here */
+    display: inline-flex; /* Aligns the image and text in a row */
+    align-items: center; /* Centers the contents vertically */
+}
+
+.statement{
+    color: black;
+    font-size: 17px;
+    text-decoration: dashed;
+    font-weight: bold; /* Makes the text bold */
+    font-style: italic; /* Makes the text italic */
+    flex-wrap: wrap;
+    align-items: center;
+}
